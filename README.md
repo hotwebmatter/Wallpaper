@@ -11,7 +11,13 @@ is beyond the scope of the current assignment. "Just the methods, ma'am."
 I've refactored some void methods from earlier assignments to return values,
 including RepeatChar() and CenterString(), along with the new IndentString().
 
+Note also that I initially abstracted out the input validation into a single
+reusable ReadDouble() method, but then created separate methods to set values of
+length, width, height, and coverage (to better match the problem specification.)
 
+These methods still call the ReadDouble() input validation method, but they are
+more closely related to mutators for private data members, which I judged to be
+part of the point of this exercise.
 
 ## Example output
 ```
