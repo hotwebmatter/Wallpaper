@@ -2,7 +2,14 @@
 Fifth assignment to be submitted via Blackboard
 
 ## Objectives
-Demonstrate usage of value-returning methods and void methods
+Demonstrate usage of value-returning methods and void methods.
+
+Note that the methods use their own (redundant) local variables for values.
+Refactoring the Wallpaper class to get and set values of private data members
+is beyond the scope of the current assignment. "Just the methods, ma'am."
+
+I've refactored some void methods from earlier assignments to return values,
+including RepeatChar() and CenterString(), along with the new IndentString().
 
 ## Example output
 ```
