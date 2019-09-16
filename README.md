@@ -25,5 +25,5 @@ Enter height (feet): 10
 
 Enter roll coverage (square feet): 100
 
-The number of rolls needed are >> 10
+The number of rolls needed are: 10
 ```

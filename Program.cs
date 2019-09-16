@@ -141,8 +141,8 @@ namespace Wallpaper
             // Number Of Rolls output
             numOfRolls = Math.Ceiling(CalculateRolls(length, width, height, rollCoverage));
 
-            // output using percentage format specifier
-            WriteLine("The number of rolls needed are >> {0}", numOfRolls);
+            // output number of rolls
+            WriteLine("The number of rolls needed are: {0}", numOfRolls);
 
             ReadLine();
         }
