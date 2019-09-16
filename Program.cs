@@ -14,7 +14,7 @@ namespace Wallpaper
 {
     class Program
     {
-        static string RepeatChar(string character, int reps)
+        private static string RepeatChar(string character, int reps)
         {
             string result = "";
 
@@ -25,7 +25,7 @@ namespace Wallpaper
             return result;
         }
 
-        static string IndentString(string message, int indent)
+        private static string IndentString(string message, int indent)
         {
             string result = "";
 
@@ -35,7 +35,7 @@ namespace Wallpaper
             return result;
         }
 
-        static string CenterString(string message, int bannerWidth)
+        private static string CenterString(string message, int bannerWidth)
         {
             string result = "";
 
@@ -79,7 +79,7 @@ namespace Wallpaper
             WriteLine(DateTime.Today.ToShortDateString());
             WriteLine(RepeatChar("*", BANNER_WIDTH));
         }
-        static void DisplayDirections()
+        private static void DisplayDirections()
         {
             // generate output
             WriteLine();
@@ -89,7 +89,7 @@ namespace Wallpaper
             WriteLine();
         }
 
-        static double CalculateRolls(double length, double width, double height, double rollCoverage)
+        private static double CalculateRolls(double length, double width, double height, double rollCoverage)
         {
             // initialize local variables
             double perimeter;
@@ -104,7 +104,7 @@ namespace Wallpaper
             return numOfRolls;
         }
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             // declare variables
             double length;
