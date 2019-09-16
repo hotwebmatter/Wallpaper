@@ -51,19 +51,72 @@ namespace Wallpaper
             return result;
         }
 
-        static int ReadInt(string input)
+        private static int ReadInt(string input)
         {
+            // input validation method
             int choice;
-
             while (!int.TryParse(input, out choice))
             {
-                WriteLine("Invalid input.\nPlease choose a number.");
+                WriteLine("Invalid input.\nPlease choose a whole number.");
+                input = ReadLine();
+            }
+            return choice;
+        }
+        private static double ReadDouble(string input)
+        {
+            // input validation method
+            double choice;
+            while (!double.TryParse(input, out choice))
+            {
+                WriteLine("Invalid input.\nPlease choose a floating-point number.");
                 input = ReadLine();
             }
             return choice;
         }
 
-        static void GenerateHeader()
+        private static double ReadLength()
+        {
+            double result;
+            string input;
+            Write("Enter length (feet): ");
+            input = ReadLine();
+            result = ReadDouble(input);
+            WriteLine();
+            return result;
+        }
+
+        private static double ReadWidth()
+        {
+            double result;
+            string input;
+            Write("Enter width (feet): ");
+            input = ReadLine();
+            result = ReadDouble(input);
+            WriteLine();
+            return result;
+        }
+        private static double ReadHeight()
+        {
+            double result;
+            string input;
+            Write("Enter height (feet): ");
+            input = ReadLine();
+            result = ReadDouble(input);
+            WriteLine();
+            return result;
+        }
+
+        private static double ReadCoverage()
+        {
+            double result;
+            string input;
+            Write("Enter roll coverage (square feet): ");
+            input = ReadLine();
+            result = ReadDouble(input);
+            WriteLine();
+            return result;
+        }
+        private static void GenerateHeader()
         {
             const int BANNER_WIDTH = 54;
             const int INDENTATION = 8;
@@ -121,24 +174,12 @@ namespace Wallpaper
             DisplayDirections();
 
             // variable assignment
-            Write("Enter length (feet): ");
-            input = ReadLine();
-            length = ReadInt(input);
-            WriteLine();
-            Write("Enter width (feet): ");
-            input = ReadLine();
-            width = ReadInt(input);
-            WriteLine();
-            Write("Enter height (feet): ");
-            input = ReadLine();
-            height = ReadInt(input);
-            WriteLine();
-            Write("Enter roll coverage (square feet): ");
-            input = ReadLine();
-            rollCoverage = ReadInt(input);
-            WriteLine();
+            length = ReadLength();
+            width = ReadWidth();
+            height = ReadHeight();
+            rollCoverage = ReadCoverage();
 
-            // Number Of Rolls output
+            // Calculate number of rolls
             numOfRolls = Math.Ceiling(CalculateRolls(length, width, height, rollCoverage));
 
             // output number of rolls
