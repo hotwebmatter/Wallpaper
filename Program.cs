@@ -47,7 +47,6 @@ namespace Wallpaper
             {
                 result += RepeatChar(" ", (bannerWidth - message.Length) / 2);
                 result += message;
-                result += "\n";
             }
             return result;
         }

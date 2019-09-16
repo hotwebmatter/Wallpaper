@@ -8,7 +8,6 @@ Demonstrate usage of value-returning methods and void methods
 ```
 ******************************************************
                       Wallpaper
-
         Calculate Single Rolls Needed
         Name: Matthew Obert
         Date: 9/16/2019
