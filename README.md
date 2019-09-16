@@ -11,6 +11,8 @@ is beyond the scope of the current assignment. "Just the methods, ma'am."
 I've refactored some void methods from earlier assignments to return values,
 including RepeatChar() and CenterString(), along with the new IndentString().
 
+
+
 ## Example output
 ```
 ******************************************************

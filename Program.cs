@@ -51,17 +51,6 @@ namespace Wallpaper
             return result;
         }
 
-        private static int ReadInt(string input)
-        {
-            // input validation method
-            int choice;
-            while (!int.TryParse(input, out choice))
-            {
-                WriteLine("Invalid input.\nPlease choose a whole number.");
-                input = ReadLine();
-            }
-            return choice;
-        }
         private static double ReadDouble(string input)
         {
             // input validation method
