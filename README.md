@@ -1,5 +1,7 @@
 # Wallpaper
-Fifth assignment to be submitted via Blackboard
+Fifth assignment to be submitted via Blackboard.
+
+Actually assigned by professor, not just based on exercise in textbook.
 
 ## Objectives
 Demonstrate usage of value-returning methods and void methods.
